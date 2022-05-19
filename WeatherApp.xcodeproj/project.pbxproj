@@ -142,8 +142,9 @@
 				E3B2E9EA283618A600E6136A /* AppDelegate.swift */,
 				E3B2E9F8283618AA00E6136A /* Info.plist */,
 				E3B2EA1A2836192F00E6136A /* Application */,
-				E3B2EA1B2836195300E6136A /* Network */,
-				E3B2EA1C2836196000E6136A /* Domain */,
+				E3B2EA2B2836310700E6136A /* Infrastructure */,
+				E3B2EA2828362F9E00E6136A /* Domain */,
+				E3B2EA1C2836196000E6136A /* Presentation */,
 				E3B2EA1D2836196B00E6136A /* Helper */,
 				E3B2EA1E2836197500E6136A /* Resoucres */,
 			);
@@ -182,12 +183,12 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		E3B2EA1C2836196000E6136A /* Domain */ = {
+		E3B2EA1C2836196000E6136A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				E3B2EA1F28361D3900E6136A /* List */,
 			);
-			path = Domain;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		E3B2EA1D2836196B00E6136A /* Helper */ = {
@@ -213,6 +214,29 @@
 				E3B2EA2228361F1F00E6136A /* ListItemCellModel.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		E3B2EA2828362F9E00E6136A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2EA2928362FB200E6136A /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E3B2EA2928362FB200E6136A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E3B2EA2B2836310700E6136A /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2EA1B2836195300E6136A /* Network */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
