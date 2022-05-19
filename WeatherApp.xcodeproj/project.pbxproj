@@ -12,11 +12,13 @@
 		9F3C494766F4A5C7AEC2BF3A /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8148733E30F174A3B8D7BA3D /* Pods_WeatherApp.framework */; };
 		E3B2E9EB283618A600E6136A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2E9EA283618A600E6136A /* AppDelegate.swift */; };
 		E3B2E9ED283618A600E6136A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2E9EC283618A600E6136A /* SceneDelegate.swift */; };
-		E3B2E9EF283618A600E6136A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2E9EE283618A600E6136A /* ViewController.swift */; };
+		E3B2E9EF283618A600E6136A /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2E9EE283618A600E6136A /* ListViewController.swift */; };
 		E3B2E9F4283618AA00E6136A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B2E9F3283618AA00E6136A /* Assets.xcassets */; };
 		E3B2EA02283618AA00E6136A /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EA01283618AA00E6136A /* WeatherAppTests.swift */; };
 		E3B2EA0C283618AA00E6136A /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EA0B283618AA00E6136A /* WeatherAppUITests.swift */; };
 		E3B2EA0E283618AA00E6136A /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EA0D283618AA00E6136A /* WeatherAppUITestsLaunchTests.swift */; };
+		E3B2EA2128361DC400E6136A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EA2028361DC400E6136A /* ListViewModel.swift */; };
+		E3B2EA2328361F1F00E6136A /* ListItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B2EA2228361F1F00E6136A /* ListItemCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		E3B2E9E7283618A600E6136A /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B2E9EA283618A600E6136A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3B2E9EC283618A600E6136A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3B2E9EE283618A600E6136A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3B2E9EE283618A600E6136A /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E3B2E9F3283618AA00E6136A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3B2E9F8283618AA00E6136A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3B2E9FD283618AA00E6136A /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,8 @@
 		E3B2EA07283618AA00E6136A /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B2EA0B283618AA00E6136A /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		E3B2EA0D283618AA00E6136A /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E3B2EA2028361DC400E6136A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E3B2EA2228361F1F00E6136A /* ListItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemCellModel.swift; sourceTree = "<group>"; };
 		E4837AD464987247E992CFC2 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +111,6 @@
 				48DA5C517FA5F89D36AB5BD9 /* Pods-WeatherAppTests.debug.xcconfig */,
 				E4837AD464987247E992CFC2 /* Pods-WeatherAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,7 +185,7 @@
 		E3B2EA1C2836196000E6136A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				E3B2E9EE283618A600E6136A /* ViewController.swift */,
+				E3B2EA1F28361D3900E6136A /* List */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -200,6 +203,16 @@
 				E3B2E9F3283618AA00E6136A /* Assets.xcassets */,
 			);
 			path = Resoucres;
+			sourceTree = "<group>";
+		};
+		E3B2EA1F28361D3900E6136A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2E9EE283618A600E6136A /* ListViewController.swift */,
+				E3B2EA2028361DC400E6136A /* ListViewModel.swift */,
+				E3B2EA2228361F1F00E6136A /* ListItemCellModel.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,8 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B2E9EF283618A600E6136A /* ViewController.swift in Sources */,
+				E3B2EA2328361F1F00E6136A /* ListItemCellModel.swift in Sources */,
+				E3B2E9EF283618A600E6136A /* ListViewController.swift in Sources */,
 				E3B2E9EB283618A600E6136A /* AppDelegate.swift in Sources */,
+				E3B2EA2128361DC400E6136A /* ListViewModel.swift in Sources */,
 				E3B2E9ED283618A600E6136A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
